@@ -1,0 +1,53 @@
+
+<html lang="US-EN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100vw;
+        height:100vh;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+    }
+    .left {
+        width: 50vw;
+        height: 50vh;
+        background-color: red;
+    }
+    .right {
+        width: 50vw;
+        height: 50vh;
+        background-color: #0000ff;
+    }
+    </style>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="left">
+                <audio class='embed-responsive-item'></video>
+            </div>
+            <div class="right" id="peerDiv">
+
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="bundle.js"></script>
+
+    </body>
+</html>
